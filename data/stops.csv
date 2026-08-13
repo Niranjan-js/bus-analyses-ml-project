@@ -1,0 +1,13 @@
+stop_id,stop_name,area,distance_km
+ST01,Stop-01,Area-A,5
+ST02,Stop-02,Area-B,3
+ST03,Stop-03,Area-C,10
+ST04,Stop-04,Area-D,8
+ST05,Stop-05,Area-E,8
+ST06,Stop-06,Area-F,7
+ST07,Stop-07,Area-G,5
+ST08,Stop-08,Area-H,5
+ST09,Stop-09,Area-A,15
+ST10,Stop-10,Area-B,3
+ST11,Stop-11,Area-C,3
+ST12,Stop-12,Area-D,5

@@ -1,0 +1,91 @@
+complaint_id,date,bus_id,student_id,category,description
+C001,2026-07-08,B06,S023,Route Issue,Requested route or stop needs review
+C002,2026-07-14,B01,S084,Crowding,Too many students during peak time
+C003,2026-07-08,B05,S069,Late Bus,Bus arrived later than expected
+C004,2026-07-22,B06,S015,Cleanliness,Bus cleanliness needs improvement
+C005,2026-07-03,B05,S086,Cleanliness,Bus cleanliness needs improvement
+C006,2026-07-17,B05,S002,Crowding,Too many students during peak time
+C007,2026-07-28,B04,S013,Route Issue,Requested route or stop needs review
+C008,2026-07-09,B06,S010,Route Issue,Requested route or stop needs review
+C009,2026-07-03,B03,S040,Crowding,Too many students during peak time
+C010,2026-07-24,B03,S012,Crowding,Too many students during peak time
+C011,2026-07-27,B06,S030,Other,General transportation feedback
+C012,2026-07-23,B04,S051,Cleanliness,Bus cleanliness needs improvement
+C013,2026-07-03,B06,S094,Late Bus,Bus arrived later than expected
+C014,2026-07-10,B02,S003,Route Issue,Requested route or stop needs review
+C015,2026-07-29,B01,S046,Late Bus,Bus arrived later than expected
+C016,2026-07-17,B04,S120,Other,General transportation feedback
+C017,2026-07-02,B06,S032,Route Issue,Requested route or stop needs review
+C018,2026-07-28,B01,S089,Crowding,Too many students during peak time
+C019,2026-07-09,B01,S050,Crowding,Too many students during peak time
+C020,2026-07-29,B04,S115,Route Issue,Requested route or stop needs review
+C021,2026-07-06,B04,S120,Other,General transportation feedback
+C022,2026-07-30,B05,S044,Late Bus,Bus arrived later than expected
+C023,2026-07-24,B04,S017,Route Issue,Requested route or stop needs review
+C024,2026-07-20,B02,S119,Cleanliness,Bus cleanliness needs improvement
+C025,2026-07-03,B03,S091,Crowding,Too many students during peak time
+C026,2026-07-10,B04,S104,Cleanliness,Bus cleanliness needs improvement
+C027,2026-07-23,B04,S073,Route Issue,Requested route or stop needs review
+C028,2026-07-02,B06,S078,Cleanliness,Bus cleanliness needs improvement
+C029,2026-07-14,B03,S091,Crowding,Too many students during peak time
+C030,2026-07-03,B06,S116,Other,General transportation feedback
+C031,2026-07-17,B06,S118,Late Bus,Bus arrived later than expected
+C032,2026-07-01,B02,S085,Late Bus,Bus arrived later than expected
+C033,2026-07-03,B02,S054,Cleanliness,Bus cleanliness needs improvement
+C034,2026-07-13,B05,S016,Cleanliness,Bus cleanliness needs improvement
+C035,2026-07-22,B04,S073,Other,General transportation feedback
+C036,2026-07-15,B01,S083,Late Bus,Bus arrived later than expected
+C037,2026-07-17,B03,S071,Late Bus,Bus arrived later than expected
+C038,2026-07-21,B03,S040,Crowding,Too many students during peak time
+C039,2026-07-01,B06,S030,Other,General transportation feedback
+C040,2026-07-17,B04,S031,Other,General transportation feedback
+C041,2026-07-09,B06,S094,Late Bus,Bus arrived later than expected
+C042,2026-07-20,B03,S097,Late Bus,Bus arrived later than expected
+C043,2026-07-07,B01,S020,Late Bus,Bus arrived later than expected
+C044,2026-07-15,B02,S085,Late Bus,Bus arrived later than expected
+C045,2026-07-22,B03,S091,Late Bus,Bus arrived later than expected
+C046,2026-07-23,B01,S079,Late Bus,Bus arrived later than expected
+C047,2026-07-29,B03,S105,Crowding,Too many students during peak time
+C048,2026-07-23,B06,S116,Late Bus,Bus arrived later than expected
+C049,2026-07-17,B02,S021,Route Issue,Requested route or stop needs review
+C050,2026-07-08,B04,S009,Other,General transportation feedback
+C051,2026-07-15,B05,S028,Cleanliness,Bus cleanliness needs improvement
+C052,2026-07-29,B01,S008,Late Bus,Bus arrived later than expected
+C053,2026-07-13,B06,S095,Cleanliness,Bus cleanliness needs improvement
+C054,2026-07-14,B04,S017,Cleanliness,Bus cleanliness needs improvement
+C055,2026-07-21,B01,S066,Driver Issue,Concern related to driving
+C056,2026-07-22,B05,S065,Late Bus,Bus arrived later than expected
+C057,2026-07-29,B05,S106,Cleanliness,Bus cleanliness needs improvement
+C058,2026-07-06,B02,S076,Late Bus,Bus arrived later than expected
+C059,2026-07-27,B01,S075,Late Bus,Bus arrived later than expected
+C060,2026-07-10,B02,S025,Cleanliness,Bus cleanliness needs improvement
+C061,2026-07-30,B06,S041,Route Issue,Requested route or stop needs review
+C062,2026-07-17,B03,S105,Crowding,Too many students during peak time
+C063,2026-07-09,B02,S119,Cleanliness,Bus cleanliness needs improvement
+C064,2026-07-21,B03,S090,Driver Issue,Concern related to driving
+C065,2026-07-03,B05,S106,Late Bus,Bus arrived later than expected
+C066,2026-07-06,B06,S110,Cleanliness,Bus cleanliness needs improvement
+C067,2026-07-27,B05,S016,Late Bus,Bus arrived later than expected
+C068,2026-07-03,B01,S089,Late Bus,Bus arrived later than expected
+C069,2026-07-21,B02,S076,Late Bus,Bus arrived later than expected
+C070,2026-07-16,B06,S108,Route Issue,Requested route or stop needs review
+C071,2026-07-21,B03,S080,Crowding,Too many students during peak time
+C072,2026-07-22,B04,S062,Route Issue,Requested route or stop needs review
+C073,2026-07-03,B06,S011,Late Bus,Bus arrived later than expected
+C074,2026-07-15,B04,S120,Route Issue,Requested route or stop needs review
+C075,2026-07-07,B03,S090,Crowding,Too many students during peak time
+C076,2026-07-28,B06,S064,Route Issue,Requested route or stop needs review
+C077,2026-07-13,B02,S054,Late Bus,Bus arrived later than expected
+C078,2026-07-08,B04,S031,Other,General transportation feedback
+C079,2026-07-15,B02,S022,Late Bus,Bus arrived later than expected
+C080,2026-07-02,B03,S071,Late Bus,Bus arrived later than expected
+C081,2026-07-08,B02,S049,Cleanliness,Bus cleanliness needs improvement
+C082,2026-07-07,B02,S092,Other,General transportation feedback
+C083,2026-07-16,B03,S080,Crowding,Too many students during peak time
+C084,2026-07-03,B04,S115,Cleanliness,Bus cleanliness needs improvement
+C085,2026-07-07,B05,S065,Late Bus,Bus arrived later than expected
+C086,2026-07-02,B03,S080,Late Bus,Bus arrived later than expected
+C087,2026-07-10,B05,S002,Late Bus,Bus arrived later than expected
+C088,2026-07-14,B02,S043,Cleanliness,Bus cleanliness needs improvement
+C089,2026-07-13,B03,S005,Late Bus,Bus arrived later than expected
+C090,2026-07-02,B05,S086,Late Bus,Bus arrived later than expected

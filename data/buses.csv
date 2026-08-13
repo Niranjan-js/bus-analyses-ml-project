@@ -1,0 +1,7 @@
+bus_id,route,total_capacity,driver
+B01,Route-A,50,Driver-01
+B02,Route-B,40,Driver-02
+B03,Route-C,60,Driver-03
+B04,Route-D,45,Driver-04
+B05,Route-E,55,Driver-05
+B06,Route-F,50,Driver-06

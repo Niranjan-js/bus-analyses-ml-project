@@ -8,12 +8,18 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'app'))
 
-from utils.data_loader import load_data
+try:
+    from utils.data_loader import load_data, render_sidebar_uploader
+except ImportError:
+    from utils.data_loader import load_data
+    def render_sidebar_uploader(): pass
+
 from utils.analytics import compute_bus_utilization
 from utils.theme import apply_theme
 
 st.set_page_config(page_title="Bus Analytics", page_icon="🚌", layout="wide")
 apply_theme()
+render_sidebar_uploader()
 
 st.title("🚌 Detailed Bus Analytics")
 
@@ -35,7 +41,6 @@ if not util.empty:
         color='category',
         labels={'utilization_pct': 'Utilization %', 'bus_id': 'Bus ID'}
     )
-    # Add threshold lines
     fig_util.add_hline(y=40, line_dash="dash", line_color="blue", annotation_text="Under 40%")
     fig_util.add_hline(y=70, line_dash="dash", line_color="green", annotation_text="Optimal 70%")
     fig_util.add_hline(y=85, line_dash="dash", line_color="orange", annotation_text="Near Cap 85%")

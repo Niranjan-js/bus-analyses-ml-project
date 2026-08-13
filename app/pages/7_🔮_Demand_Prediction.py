@@ -8,12 +8,18 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'app'))
 
-from utils.data_loader import load_data
+try:
+    from utils.data_loader import load_data, render_sidebar_uploader
+except ImportError:
+    from utils.data_loader import load_data
+    def render_sidebar_uploader(): pass
+
 from utils.theme import apply_theme
 from ai.predictor import predict_demand, get_capacity_alerts
 
 st.set_page_config(page_title="Demand Prediction", page_icon="🔮", layout="wide")
 apply_theme()
+render_sidebar_uploader()
 
 st.title("🔮 AI Demand Prediction")
 st.markdown("*Random Forest model predicting next-day passenger demand based on historical usage patterns*")
@@ -21,17 +27,14 @@ st.divider()
 
 data = load_data()
 
-# Run prediction
 with st.spinner("Training prediction model..."):
     predictions = predict_demand(data['bus_usage'], data['buses'])
 
 if predictions is not None and not predictions.empty:
-    # Merge with route info
     predictions = predictions.merge(
         data['buses'][['bus_id', 'route']], on='bus_id', how='left'
     )
     
-    # KPI Row
     col1, col2, col3 = st.columns(3)
     avg_pred_util = predictions['utilization_forecast'].mean()
     critical_count = len(predictions[predictions['alert_level'] == 'Critical'])
@@ -43,7 +46,6 @@ if predictions is not None and not predictions.empty:
     
     st.divider()
     
-    # Predicted Demand vs Capacity Chart
     col1, col2 = st.columns([3, 2])
     
     with col1:
@@ -96,7 +98,6 @@ if predictions is not None and not predictions.empty:
         
         st.divider()
         
-        # Legend
         st.markdown("""
         **Alert Levels:**
         - 🟢 **Normal**: < 85% utilization
@@ -104,7 +105,6 @@ if predictions is not None and not predictions.empty:
         - 🔴 **Critical**: > 100% utilization
         """)
     
-    # Detailed Prediction Table
     st.subheader("📋 Detailed Predictions")
     display_df = predictions[['bus_id', 'route', 'predicted_passengers', 'total_capacity', 
                                'utilization_forecast', 'alert_level']].copy()
@@ -118,7 +118,6 @@ if predictions is not None and not predictions.empty:
         hide_index=True
     )
     
-    # Per-bus prediction cards
     st.subheader("🚌 Per-Bus Forecast")
     cols = st.columns(3)
     for i, (_, row) in enumerate(predictions.iterrows()):

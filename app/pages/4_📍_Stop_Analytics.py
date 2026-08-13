@@ -7,11 +7,17 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'app'))
 
-from utils.data_loader import load_data
+try:
+    from utils.data_loader import load_data, render_sidebar_uploader
+except ImportError:
+    from utils.data_loader import load_data
+    def render_sidebar_uploader(): pass
+
 from utils.theme import apply_theme
 
 st.set_page_config(page_title="Stop Analytics", page_icon="📍", layout="wide")
 apply_theme()
+render_sidebar_uploader()
 
 st.title("📍 Stop Analytics")
 
@@ -39,4 +45,4 @@ fig3 = px.pie(area_counts, names='area', values='student_count', title="Students
 st.plotly_chart(fig3, use_container_width=True)
 
 st.subheader("Stop Detail Table")
-st.dataframe(stop_data.drop(columns=['stop_id']), use_container_width=True)
+st.dataframe(stop_data.drop(columns=['stop_id']), use_container_width=True, hide_index=True)

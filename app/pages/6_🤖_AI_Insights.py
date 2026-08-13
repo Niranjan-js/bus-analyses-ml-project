@@ -8,7 +8,12 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'app'))
 
-from utils.data_loader import load_data
+try:
+    from utils.data_loader import load_data, render_sidebar_uploader
+except ImportError:
+    from utils.data_loader import load_data
+    def render_sidebar_uploader(): pass
+
 from utils.analytics import (
     compute_bus_utilization, compute_delay_analysis,
     compute_complaint_analysis, compute_kpis
@@ -18,6 +23,7 @@ from ai.insights import generate_bus_insights, generate_system_summary
 
 st.set_page_config(page_title="AI Insights", page_icon="🤖", layout="wide")
 apply_theme()
+render_sidebar_uploader()
 
 st.title("🤖 AI Transport Intelligence")
 st.markdown("*AI-powered analysis of transportation data with evidence-based recommendations*")

@@ -7,12 +7,18 @@ import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'app'))
 
-from utils.data_loader import load_data
+try:
+    from utils.data_loader import load_data, render_sidebar_uploader
+except ImportError:
+    from utils.data_loader import load_data
+    def render_sidebar_uploader(): pass
+
 from utils.analytics import compute_kpis, compute_bus_utilization, compute_delay_analysis, compute_daily_trends
 from utils.theme import apply_theme
 
 st.set_page_config(page_title="Transport Overview", page_icon="📊", layout="wide")
 apply_theme()
+render_sidebar_uploader()
 
 st.title("📊 Transport Overview")
 
@@ -43,7 +49,6 @@ with col1:
 
 with col2:
     st.subheader("Route Performance")
-    # Join buses and usage
     bu = data['bus_usage'].merge(data['buses'], on='bus_id')
     route_perf = bu.groupby('route').agg({'delay_minutes': 'mean', 'students_boarded': 'mean'}).reset_index()
     if not route_perf.empty:

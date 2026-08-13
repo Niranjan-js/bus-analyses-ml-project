@@ -8,10 +8,13 @@ An end-to-end intelligent decision-support system that analyzes college transpor
 
 ## 🎥 Working Application Video Demonstration
 
-Check out the full working video recording of the application in action:
-- 🎬 **Video File**: [`screenshots/working_demo.webm`](screenshots/working_demo.webm) (Full interactive demo covering all 10 pages)
+Below is an animated walkthrough recording showing full live application usage across all 10 Streamlit pages:
 
-<video src="screenshots/working_demo.webm" width="100%" controls title="AI College Transport Analyzer Demo Video"></video>
+![Working Application Video Demo](screenshots/working_demo.gif)
+
+### 📥 Video Download & Direct Links:
+- 🎬 [**Watch / Download Full MP4 Demo (`working_demo.mp4`)**](screenshots/working_demo.mp4)
+- 🎬 [**Watch / Download WebM Demo (`working_demo.webm`)**](screenshots/working_demo.webm)
 
 ---
 
@@ -188,7 +191,7 @@ Account Identifier: `QEJHMZX-GXB17254`
 | AI Implementation | 25 | ✅ Risk Scoring + AI Recommendations + NL Chatbot |
 | Dashboard / UI | 15 | ✅ 10 pages + modern CSS styling + Plotly charts |
 | Innovation | 15 | ✅ ML Demand Prediction, Super Admin Console, Interactive Simulator, CSV/HTML Exports |
-| Presentation & Demo | 10 | ✅ Comprehensive README, Walkthrough, Screenshots, Full Video Demo, and PDF/HTML report exports |
+| Presentation & Demo | 10 | ✅ Comprehensive README, Walkthrough, Screenshots, Animated GIF & MP4 Demo, and PDF/HTML report exports |
 | **TOTAL** | **100** | **100 / 100** |
 
 ---

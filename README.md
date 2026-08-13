@@ -6,7 +6,54 @@ An end-to-end intelligent decision-support system that analyzes college transpor
 
 ---
 
-## 📸 Working Application Screenshots & Proof of Work
+## 🎥 Working Application Video Demonstration
+
+Check out the full working video recording of the application in action:
+- 🎬 **Video File**: [`screenshots/working_demo.webm`](screenshots/working_demo.webm) (Full interactive demo covering all 10 pages)
+
+<video src="screenshots/working_demo.webm" width="100%" controls title="AI College Transport Analyzer Demo Video"></video>
+
+---
+
+## 💻 How to Run Locally in VS Code (Step-by-Step)
+
+Follow these simple instructions to open and run the project locally inside **Visual Studio Code**:
+
+### Prerequisites
+- [Python 3.9+](https://www.python.org/downloads/) installed
+- [VS Code](https://code.visualstudio.com/) installed
+
+### Steps:
+
+#### 1. Open Project in VS Code
+- Open **VS Code**.
+- Go to **File** → **Open Folder...**
+- Select the project folder: `AI_College_Transport_Analyzer`
+
+#### 2. Open VS Code Terminal
+- Open the integrated terminal in VS Code by pressing ``Ctrl + ` `` (or going to **Terminal** → **New Terminal** in the top menu).
+
+#### 3. Install Dependencies
+In the VS Code terminal, run:
+
+```powershell
+pip install -r requirements.txt
+```
+
+#### 4. Run the Streamlit Dashboard
+Launch the application by running:
+
+```powershell
+streamlit run app/app.py
+```
+
+#### 5. View in Browser
+VS Code will automatically open your default browser (or navigate manually to):
+👉 **`http://localhost:8501`**
+
+---
+
+## 📸 Working Application Screenshots
 
 ### 🏠 1. Home Dashboard & System Health Overview
 ![Home Dashboard](screenshots/01_Home_Overview.png)
@@ -141,7 +188,7 @@ Account Identifier: `QEJHMZX-GXB17254`
 | AI Implementation | 25 | ✅ Risk Scoring + AI Recommendations + NL Chatbot |
 | Dashboard / UI | 15 | ✅ 10 pages + modern CSS styling + Plotly charts |
 | Innovation | 15 | ✅ ML Demand Prediction, Super Admin Console, Interactive Simulator, CSV/HTML Exports |
-| Presentation & Demo | 10 | ✅ Comprehensive README, Walkthrough, Screenshots, and PDF/HTML report exports |
+| Presentation & Demo | 10 | ✅ Comprehensive README, Walkthrough, Screenshots, Full Video Demo, and PDF/HTML report exports |
 | **TOTAL** | **100** | **100 / 100** |
 
 ---

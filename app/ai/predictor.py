@@ -5,10 +5,13 @@ from sklearn.model_selection import train_test_split
 def predict_demand(bus_usage_df, buses_df):
     """Predict next-day demand per bus using Random Forest."""
     if len(bus_usage_df) < 10:
-        # Not enough data for prediction, return empty or dummy
+        # Not enough data for prediction, return empty
         return pd.DataFrame()
         
     df = bus_usage_df.copy()
+    if 'date' in df.columns:
+        df['date'] = pd.to_datetime(df['date'])
+        
     df = df.sort_values(by=['bus_id', 'date'])
     
     # Feature engineering
